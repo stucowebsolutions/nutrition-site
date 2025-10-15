@@ -1,0 +1,23 @@
+---
+// Site layout wrapper: includes head, navbar and footer
+import "../styles/global.css";
+import Navbar from './Navbar.astro';
+import Footer from './Footer.astro';
+const siteTitle = 'Nutrition Consultations';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{siteTitle}</title>
+    <meta name="description" content="Nutrition consultations to help you build healthy, sustainable habits." />
+  </head>
+  <body class="min-h-screen flex flex-col bg-emerald-50 text-gray-800">
+    <Navbar />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

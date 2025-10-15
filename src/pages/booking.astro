@@ -1,0 +1,13 @@
+---
+import Layout from '../components/Layout.astro';
+import CalendlyWidget from '../components/CalendlyWidget.astro';
+---
+<Layout title="Book a Consultation">
+  <section class="max-w-3xl mx-auto py-16 px-4 text-center">
+    <h1 class="text-4xl font-bold text-emerald-700 mb-4">Schedule Your Consultation</h1>
+    <p class="text-gray-600 mb-8">Choose a time that works best for you using our live calendar.</p>
+    
+    <!-- Inline Calendly widget -->
+    <CalendlyWidget inline={true} />
+  </section>
+</Layout>

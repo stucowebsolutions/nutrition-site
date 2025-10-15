@@ -1,0 +1,39 @@
+---
+---
+<nav class="bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-xl font-semibold text-emerald-700">Yawn Nutrition</a>
+    <ul class="hidden md:flex items-center space-x-6 text-gray-700">
+      <li><a href="/" class="hover:text-emerald-600">Home</a></li>
+      <li><a href="/about" class="hover:text-emerald-600">About</a></li>
+      <li><a href="/services" class="hover:text-emerald-600">Services</a></li>
+      <li><a href="/booking" class="hover:text-emerald-600">Booking</a></li>
+      <li><a href="/contact" class="hover:text-emerald-600">Contact</a></li>
+    </ul>
+
+    <!-- Mobile menu button (simple): -->
+    <div class="md:hidden">
+      <button id="mobile-menu-btn" aria-label="Open menu" class="p-2 rounded-md focus:outline-none">
+        <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-700"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav (hidden by default) -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+    <div class="px-4 py-4 space-y-2">
+      <a href="/" class="block">Home</a>
+      <a href="/about" class="block">About</a>
+      <a href="/services" class="block">Services</a>
+      <a href="/booking" class="block">Booking</a>
+      <a href="/contact" class="block">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    // minimal mobile toggle, ships as inline JS
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</nav>

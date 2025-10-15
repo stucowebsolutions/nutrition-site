@@ -1,0 +1,24 @@
+---
+/*
+Props:
+  - url (string): your Calendly link, default is your account
+  - inline (boolean): true = full inline widget, false = popup button
+*/
+const { url = "https://calendly.com/ryawnnutrition", inline = true } = Astro.props;
+---
+
+{inline ? (
+  <!-- Inline widget -->
+  <div class="calendly-inline-widget" data-url={url} style="min-width:320px;height:700px;"></div>
+) : (
+  <!-- Popup button -->
+  <button
+    onclick={`Calendly.initPopupWidget({ url: '${url}' }); return false;`}
+    class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200"
+  >
+    Book a Consultation
+  </button>
+)}
+
+<!-- Calendly Script -->
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
