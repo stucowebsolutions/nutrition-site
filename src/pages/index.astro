@@ -4,10 +4,47 @@ import Hero from '../components/Hero.astro';
 ---
 <Layout>
   <Hero />
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-semibold mb-3">Welcome</h2>
-    <p class="text-gray-700 leading-relaxed">
+  <!-- Welcome Section -->
+  <section class="py-20 px-4 max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-emerald-700 mb-4">Welcome to Yawn Nutrition</h2>
+    <p class="text-gray-700 text-lg">
       At Yawn Nutrition, we believe that true wellness starts with a balanced, individualized approach to food and lifestyle. Whether you’re looking to increase energy, improve digestion, or manage your weight, our personalized consultations give you the guidance and support you need to make meaningful, lasting changes.
+    </p>
+  </section>
+
+  <!-- Services Overview Section -->
+  <section class="bg-white py-20 px-4">
+    <h2 class="text-4xl font-bold text-emerald-700 text-center mb-12">How We Can Help</h2>
+    <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-2">
+      <div class="bg-emerald-50 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-2">Personalized Nutrition Consultations</h3>
+        <p>Tailored advice based on your goals, lifestyle, and preferences.</p>
+      </div>
+      <div class="bg-emerald-50 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-2">Habit-Based Coaching</h3>
+        <p>Practical strategies to help you adopt sustainable habits.</p>
+      </div>
+      <div class="bg-emerald-50 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-2">Support for Wellness Goals</h3>
+        <p>Weight management, energy optimization, digestive health, and more.</p>
+      </div>
+      <div class="bg-emerald-50 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold mb-2">Flexible Virtual Sessions</h3>
+        <p>Convenient appointments that fit your schedule.</p>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="/services" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200">
+        Learn More About Our Services
+      </a>
+    </div>
+  </section>
+
+  <!-- Approach to Health & Wellness Section -->
+  <section class="py-20 px-4 max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-emerald-700 mb-6">Our Approach</h2>
+    <p class="text-gray-700 text-lg">
+      We focus on <strong>evidence-based, sustainable nutrition strategies</strong> rather than quick fixes or fad diets. By understanding your unique needs and lifestyle, we create a practical plan that fits seamlessly into your daily life. Our goal is to empower you to make informed choices, enjoy your food, and feel confident in your journey toward long-term health and wellness.
     </p>
   </section>
 </Layout>
